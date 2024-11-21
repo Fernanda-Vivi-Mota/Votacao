@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f90e6;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 20px;
+    color: #333;
+
+}
+
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.projeto {
+    width: 200px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.projeto img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 4px solid transparent; /* Borda inicial transparente */
+}
+
+.projeto:hover img {
+    transform: scale(1.1);
+}
+
+.projeto input[type="radio"] {
+    display: none;
+}
+
+.projeto input[type="radio"]:checked + img {
+    border-color: #55d7ee; /* Borda verde ao selecionar */
+}
+
+.projeto label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.projeto label span {
+    margin-top: 10px;
+    color: #555;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color:  #55d7ee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px
+}
+
+#logo img{
+    width: 20%;
+    height: 20%;
+    position: absolute;
+    right: 75%;
+}
